@@ -58,6 +58,11 @@ if has_consent; then
   defaults write com.apple.dock static-only -bool true
 fi
 
+get_consent "Dock: Show hidden apps as semi-transparent"
+if has_consent; then
+  defaults write com.apple.Dock showhidden -bool TRUE
+fi
+
 get_consent "Dock: Minimize windows into their app icon"
 if has_consent; then
   defaults write com.apple.dock minimize-to-application -bool true
@@ -86,6 +91,11 @@ fi
 get_consent "Global: Disable Notification Center and remove the menu bar icon"
 if has_consent; then
   launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+fi
+
+get_consent "Global: Set JPEG as default image format for screenshots"
+if has_consent; then
+  defaults write com.apple.screencapture type jpg
 fi
 
 get_consent "Screensaver: Require password immediately after sleep or screen saver begins"

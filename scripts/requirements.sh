@@ -94,7 +94,7 @@ if ! has_path "Development"; then
   get_consent "Create ~/Development folder and subdirectories (github, node, personal, r, resources, svelte)"
   if has_consent; then
     e_pending "Creating ~/Development folder and subdirectories"
-    mkdir -p ~/Development/{github,node,personal,r,resources,svelte}
+    mkdir -p ~/Development/{github,personal,resources,work}
     test_path "Development"
   fi
 fi

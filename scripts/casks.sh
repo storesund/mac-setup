@@ -15,33 +15,29 @@ declare -a cask_name=(
 "firefox"
 "google-chrome"
 "iterm2"
-"qgis"
-"r"
 "rectangle"
-"rstudio"
 "slack"
 "sourcetree"
 "spotify"
 "visual-studio-code"
+"iina"
 )
 
 declare -a cask_desc=(
 "1Password 7"
-"Alfred 4"
+"Alfred 5"
 "AltTab"
 "Brave Browser"
 "Figma"
 "Firefox"
 "Google Chrome"
 "iTerm"
-"QGIS"
-"R"
 "Rectangle"
-"RStudio"
 "Slack"
 "Sourcetree"
 "Spotify"
 "Visual Studio Code"
+"IINA"
 )
 
 if has_command "brew"; then

@@ -8,10 +8,13 @@ e_pending "Checking brews"
 
 declare -a brew_name=(
 "python"
+"pyenv"
 "fzf"
 "git"
 "tree"
 "wget"
+"tmate"
+"htop"
 )
 
 if has_command "brew"; then
